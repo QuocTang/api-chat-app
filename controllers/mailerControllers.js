@@ -20,12 +20,12 @@ const sendMailAuthencation = asyncHandler(async (req, res) => {
     html: `
 <h2>Hey ${name}!</h2>
     
-<h5>A sign in attempt requires further verification because we did not reconize your device.
+<h4>A sign in attempt requires further verification because we did not reconize your device.
  To complete the sign in, enter the verification code on the unrecognized device.</h5>
 
 <h4>Verification code: <span style="color:red">${randomCapcha}</span></h4>
 
-<h5>Thanks</h5>
+<h4>Thanks</h5>
 
 `,
   };
