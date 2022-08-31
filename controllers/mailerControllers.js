@@ -14,9 +14,9 @@ const sendMailAuthencation = asyncHandler(async (req, res) => {
   let randomCapcha = (Math.random() + 1).toString(36).substring(7);
   console.log(email);
   const options = {
-    from: "abclone113@gmail.com",
+    from: "abclone114@gmail.com",
     to: email,
-    subject: "oktest",
+    subject: "[ChatApp] Please verify your emal",
     text: randomCapcha,
   };
   await transporter.sendMail(options, (err, info) => {
